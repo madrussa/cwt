@@ -8,6 +8,8 @@ tab-complete those terms. It works regardless of how your worktrees are laid out
 `myapp-hotfix`, etc.) because it enumerates them via `git worktree list`, not
 hard-coded paths.
 
+![cwt demo](demo.gif)
+
 ```sh
 cwt webapp signup-flow   # -> webapp's worktree whose branch matches "signup-flow"
 cwt api update-deps      # -> api's matching worktree
