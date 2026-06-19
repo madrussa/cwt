@@ -63,6 +63,23 @@ opens (pre-seeded with your term). Without `fzf`, the candidates are listed inst
 - `git` (2.5+, for worktrees), `awk`, `sort`, `sed`, `cut` (all standard).
 - `fzf` (optional but recommended) for interactive disambiguation and the no-arg menu.
 
+### Installing fzf
+
+```sh
+brew install fzf                 # macOS / Linuxbrew
+sudo apt install fzf             # Debian / Ubuntu
+sudo dnf install fzf             # Fedora
+sudo pacman -S fzf               # Arch
+```
+
+Or install the latest release straight from the source repo (any OS):
+
+```sh
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+```
+
+See the [fzf README](https://github.com/junegunn/fzf#installation) for more options.
+
 ## How it works
 
 `cwt` is a **shell function** (it must run in your shell to change its directory).
